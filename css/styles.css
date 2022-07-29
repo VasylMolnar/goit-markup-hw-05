@@ -150,7 +150,6 @@ body {
 .icon-contact:hover {
     color: var(--background);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
@@ -382,8 +381,6 @@ body {
 
 .clients_li {
     margin-right: 30px;
-    border: 1px solid var(--networks);
-    border-radius: 4px;
 }
 
 .clients_a {
@@ -393,10 +390,12 @@ body {
     width: 170px;
     height: 90px;
     color: var(--networks);
+    border: 1px solid var(--networks);
+    border-radius: 4px;
 }
 
 .clients_a:hover {
-    border-color: var(--background);
+    border-color: solid var(--background);
     color: var(--background);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -614,6 +613,12 @@ body {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+}
+
+
+.backdrop.is-hidden .modal {
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(0);
 }
 
 .backdrop {
